@@ -1,0 +1,179 @@
+{
+  "experiment": "free_modes",
+  "category": "numerical experiment",
+  "parameters": {
+    "k": 1.0,
+    "eta0": -80.0,
+    "eta1": -0.02,
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "method": "DOP853",
+    "cases": [
+      "conformal  (m=0, xi=1/6)",
+      "massless minimal (m=0, xi=0)",
+      "light massive (m=0.8H, xi=0)",
+      "heavy (m=1.7H, xi=0)"
+    ]
+  },
+  "diagnostics": {
+    "conformal  (m=0, xi=1/6)": {
+      "max_abs_err_vs_analytic": 4.2113310775751875e-11,
+      "wronskian": {
+        "initial_residual": 4.440892098500626e-16,
+        "max_residual": 4.5703552054021657e-11,
+        "final_residual": 1.0096368185941174e-11,
+        "max_residual_location": -13.63172413793103,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "method": "DOP853",
+        "growth_factor": 102915.25,
+        "passes": true,
+        "tolerance_used": 1e-08,
+        "note": "no rescaling applied; residual is |v v*' - v* v' - i|"
+      },
+      "nfev": 5012
+    },
+    "massless minimal (m=0, xi=0)": {
+      "max_abs_err_vs_analytic": 2.0403465332773098e-09,
+      "wronskian": {
+        "initial_residual": 2.220446049250313e-16,
+        "max_residual": 4.314526513837791e-11,
+        "final_residual": 1.1284306822290091e-11,
+        "max_residual_location": -19.859310344827584,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "method": "DOP853",
+        "growth_factor": 194309.0,
+        "passes": true,
+        "tolerance_used": 1e-08,
+        "note": "no rescaling applied; residual is |v v*' - v* v' - i|"
+      },
+      "nfev": 5690
+    },
+    "light massive (m=0.8H, xi=0)": {
+      "max_abs_err_vs_analytic": 7.171494499487565e-10,
+      "wronskian": {
+        "initial_residual": 2.220446049250313e-16,
+        "max_residual": 4.464184577557262e-11,
+        "final_residual": 1.1641132502404616e-11,
+        "max_residual_location": -19.859310344827584,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "method": "DOP853",
+        "growth_factor": 201049.0,
+        "passes": true,
+        "tolerance_used": 1e-08,
+        "note": "no rescaling applied; residual is |v v*' - v* v' - i|"
+      },
+      "nfev": 5666
+    },
+    "heavy (m=1.7H, xi=0)": {
+      "max_abs_err_vs_analytic": 4.527318117718065e-11,
+      "wronskian": {
+        "initial_residual": 2.220446049250313e-16,
+        "max_residual": 7.1620043229359e-11,
+        "final_residual": 1.830480211850727e-11,
+        "max_residual_location": -1.9772413793103425,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "method": "DOP853",
+        "growth_factor": 322548.0,
+        "passes": true,
+        "tolerance_used": 1e-08,
+        "note": "no rescaling applied; residual is |v v*' - v* v' - i|"
+      },
+      "nfev": 5819
+    }
+  },
+  "tolerance_sweep": {
+    "RK45": {
+      "rtol": [
+        0.0001,
+        1e-06,
+        1e-08,
+        1e-10,
+        1e-12,
+        1e-13
+      ],
+      "rel_err": [
+        0.0017730684079746224,
+        1.3409226997884595e-05,
+        1.2859397277899465e-07,
+        1.2214487088372585e-09,
+        1.1905741421443521e-11,
+        1.178024363323567e-12
+      ],
+      "wronskian": [
+        0.0021077387085204347,
+        2.55121271268699e-05,
+        2.61174692206545e-07,
+        2.4831693368199126e-09,
+        2.412503530280219e-11,
+        2.3913093727401247e-12
+      ]
+    },
+    "DOP853": {
+      "rtol": [
+        0.0001,
+        1e-06,
+        1e-08,
+        1e-10,
+        1e-12,
+        1e-13
+      ],
+      "rel_err": [
+        0.000793716092258714,
+        7.690039081089457e-06,
+        7.811418647093098e-08,
+        7.863974858907638e-10,
+        8.304253845812672e-12,
+        9.356788837118037e-13
+      ],
+      "wronskian": [
+        0.0011577355094651853,
+        8.107707245796902e-06,
+        6.183032097428764e-08,
+        5.475883080308108e-10,
+        4.55935289522813e-12,
+        4.078959392472825e-13
+      ]
+    },
+    "Radau": {
+      "rtol": [
+        0.0001,
+        1e-06,
+        1e-08,
+        1e-10,
+        1e-12,
+        1e-13
+      ],
+      "rel_err": [
+        3.8502317972405105e-05,
+        2.0443017878183573e-07,
+        9.234957005601092e-10,
+        8.907246946024137e-12,
+        1.1756631708240426e-13,
+        2.254474561481704e-14
+      ],
+      "wronskian": [
+        8.558888868404058e-05,
+        4.151151470344061e-07,
+        2.383862884869359e-09,
+        2.0093704478085783e-11,
+        2.3780977187470853e-13,
+        3.497202527569243e-14
+      ]
+    }
+  },
+  "data_sha256": "52a0fb17d45b7de2a4888bfde9e526641846a4a99ab1a33e1c1ae1cf28ebda83",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "matplotlib": "3.10.8",
+    "float_precision": "IEEE-754 binary64 (mpmath used where stated)"
+  }
+}

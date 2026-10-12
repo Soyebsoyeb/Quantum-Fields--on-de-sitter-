@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Quantum Fields on de Sitter Spacetime: Mode Functions, Vacuum Structure, Correlation Functions, and Perturbative QFT"
+version: 0.1.0
+date-released: 2026-10-13
+license: MIT
+authors:
+  - family-names: "YOUR-SURNAME"
+    given-names: "YOUR-NAME"
+repository-code: "https://github.com/YOUR-USER/quantum-fields-on-de-sitter"
+keywords: [de Sitter, quantum field theory in curved spacetime, in-in formalism, Bunch-Davies, cosmology]
