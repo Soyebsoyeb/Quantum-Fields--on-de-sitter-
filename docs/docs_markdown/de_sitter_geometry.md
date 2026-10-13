@@ -18,8 +18,8 @@ The invariant $Z(x,x')=H^2X\!\cdot\!X'$ equals $\cos(H\sigma)$ for spacelike geo
 
 The flat chart is obtained by $X_0=\frac1H\sinh Ht+\frac H2e^{Ht}x^2$, $X_4=\frac1H\cosh Ht-\frac H2e^{Ht}x^2$, $X_i=e^{Ht}x_i$ (one checks $X_4^2-X_0^2=H^{-2}-e^{2Ht}x^2$). It is **geodesically incomplete to the past**: $\eta\to-\infty$ is a coordinate horizon, not a past boundary of the manifold. A "state defined at $\eta\to-\infty$" is therefore a statement about the behaviour of modes near the boundary of the patch, not an initial condition on a Cauchy surface of the full spacetime.
 
-In the flat chart $Z=\dfrac{\eta^2+\eta'^2-r^2}{2\eta\eta'}$, $r=|\mathbf x-\mathbf x'|$ (this expression is *tested*: the independent mode-sum and the closed form agree to $10^{-13}$ only if it is correct, `tests/test_two_point.py`).
+In the flat chart $Z=\dfrac{\eta^2+\eta'^2-r^2}{2\eta\eta'}$, $r=\vert\mathbf x-\mathbf x'\vert$ (this expression is *tested*: the independent mode-sum and the closed form agree to $10^{-13}$ only if it is correct, `tests/test_two_point.py`).
 
 ## Horizon crossing
 
-A mode with comoving wavenumber $k$ has physical wavenumber $k/a$; $k=aH\iff k|\eta|=1$. The comoving Hubble radius is $1/(aH)=-\eta$, shrinking in time, so every mode eventually leaves the horizon (Fig. 1).
+A mode with comoving wavenumber $k$ has physical wavenumber $k/a$; $k=aH\iff k\vert\eta\vert=1$. The comoving Hubble radius is $1/(aH)=-\eta$, shrinking in time, so every mode eventually leaves the horizon (Fig. 1).

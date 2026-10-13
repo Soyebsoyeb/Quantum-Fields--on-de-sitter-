@@ -1,0 +1,5 @@
+docs_rendered/index.html  -> open in any browser. All equations are already typeset (KaTeX); fonts and CSS are bundled.
+                             Navigation sidebar links the README, the technical report and all 18 derivation documents.
+docs_markdown/            -> the same sources as Markdown, with math made renderer-safe (pipes written as \vert,
+                             asterisks as \ast, no whitespace next to $ delimiters), so GitHub / VS Code also render them.
+Print to PDF from the browser (the navigation sidebar is hidden automatically in print view).

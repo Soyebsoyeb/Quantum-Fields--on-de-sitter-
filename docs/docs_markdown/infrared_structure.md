@@ -5,8 +5,8 @@
 ## Small-$k$ behaviour
 
 For real $\nu>0$, $H^{(1)}_\nu(x)\simeq-\tfrac{i}{\pi}\Gamma(\nu)(2/x)^\nu$ as $x\to0$ (DLMF 10.7.2), hence
-$$|\phi_k|^2\to\frac{H^2\eta^2(-\eta)}{4\pi}\Gamma(\nu)^2\,2^{2\nu}(-k\eta)^{-2\nu}\propto k^{-2\nu}.$$
-The two-point integral $\int dk\,k^2|\phi_k|^2$ has IR behaviour $\int dk\,k^{2-2\nu}$: convergent iff $\nu<3/2$, logarithmic at $\nu=3/2$, power-divergent for $\nu>3/2$.
+$$\vert\phi_k\vert^2\to\frac{H^2\eta^2(-\eta)}{4\pi}\Gamma(\nu)^2\,2^{2\nu}(-k\eta)^{-2\nu}\propto k^{-2\nu}.$$
+The two-point integral $\int dk\,k^2\vert\phi_k\vert^2$ has IR behaviour $\int dk\,k^{2-2\nu}$: convergent iff $\nu<3/2$, logarithmic at $\nu=3/2$, power-divergent for $\nu>3/2$.
 
 ## Massless vs light massive
 
